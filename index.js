@@ -1,6 +1,6 @@
 /* CREAR UN ALGORITMO CON CONDICIONAL */
 
-/* let maxSpeed = prompt ("max speed 120");
+let maxSpeed = prompt ("max speed 120");
 
 if (maxSpeed == 120){
     alert("Send a message");
@@ -9,18 +9,18 @@ if (maxSpeed == 120){
 } else{
     alert ("nothing happens");
 }
- */
+
 
 /* CREAR UN ALGORITMO UTILIZANDO UN CICLO */
 
 /* CICLO DE CONTEO */
 
-/* let ingresarNumero = parseInt ( prompt ("Ingresar Numero")); 
+let ingresarNumero = parseInt ( prompt ("Ingresar Numero")); 
 
 for (let i = 2; i <= 10; i++){
     let resultado = ingresarNumero * i;
     alert(ingresarNumero + " " + i + "=" + resultado );
-} */
+} 
 
 /* CICLOS CONDICIONALES */
 
@@ -47,5 +47,5 @@ var ivaEnFactura = 23;
 var iva = precio * ivaEnFactura/100;
 var precioTotal = precio + iva;
 
-alert( precioTotal);
+alert(precioTotal);
 
