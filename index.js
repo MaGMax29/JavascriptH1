@@ -41,34 +41,22 @@ console.log ("End of cicle"); */
 
 /* PROCESO CALCULO DEL IVA */
 
-var precio = 100;
+/* var precio = 100;
 var ivaEnFactura = 23;
 
 var iva = precio * ivaEnFactura/100;
 var precioTotal = precio + iva;
 
-alert(precioTotal); 
+alert(precioTotal);  */
 
 
 /* AGREGANDO ARRAYS */
 
-const libros= ["Orgullo y Prejuicio", "El Perfume", "El color Purpura", "Metamorfosis", "Mujercitas"];
-
-alert(libros[3]);
-
-let total="";
-
-for (let index=0; index < 5; index++){
-    console.log (libros[index]);
-    total= total+ libros [index]
-
-}
-console.log (total);
 
 
 /* AGREGANDO ARRAY AL SIMULADOR INTERACTIVO */
 
-const factura= ["Base sin Iva", "Iva", "Total con Iva"];
+/* const factura= ["Base sin Iva", "Iva", "Total con Iva"];
 
 factura.push ("descuento");
 
@@ -84,10 +72,10 @@ for (let index= 0; index <3; index++){
 }
 console.log (factura);
 
-
+ */
 /* Ejemplo de Busqueda */
 
-const facturas = [
+/* const facturas = [
     
     {numero: "00204", montoTotal: 1500},
     {numero: "00186", montoTotal: 2300},
@@ -101,12 +89,42 @@ const resultado3 = facturas.find((el)=> el.numero === "00087")
 
 console.log (resultado)
 console.log (resultado2)
-console.log (resultado3)
+console.log (resultado3) */
 
 
 /* EJEMPLO DE FILTER */
-
+/* 
 const resultadoX = facturas.filter((el)=> el.numero.includes ("00186"))
 const resultadoY = facturas.filter((el)=> el.numero.includes ("00204"))
-const resultadoZ = facturas.filter((el)=> el.montoTotal < 2300)
+const resultadoZ = facturas.filter((el)=> el.montoTotal < 2300) */
 
+/* 2DA ENTREGA DE PROYECTO */
+
+/* DOM */
+console.log (document.body);
+
+console.log(document.head);
+
+document.getElementById ("titulo");
+
+console.log (document.getElementById ("titulo"));
+
+
+let clientes = document.getElementsByClassName ("clientes");
+
+for (const el of clientes){
+    console.log(el.innerHTML);
+
+}
+
+/* STORAGE */
+localStorage.setItem("cliente", "Arturo");
+localStorage.setItem("cliente1", "Vanessa");
+
+/* JSON */
+
+const cliente = { nombre: "Elizabeth", apellido: "Rojas", edad: 37};
+
+console.log(JSON.stringify (cliente));
+
+localStorage.setItem("arrayCliente", JSON.stringify(cliente));
