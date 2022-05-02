@@ -101,7 +101,7 @@ const resultadoZ = facturas.filter((el)=> el.montoTotal < 2300) */
 /* 2DA ENTREGA DE PROYECTO */
 
 /* DOM */
-console.log (document.body);
+/* console.log (document.body);
 
 console.log(document.head);
 
@@ -113,18 +113,51 @@ console.log (document.getElementById ("titulo"));
 let clientes = document.getElementsByClassName ("clientes");
 
 for (const el of clientes){
-    console.log(el.innerHTML);
+    console.log(el.innerHTML); */
 
-}
+/* } */
 
 /* STORAGE */
-localStorage.setItem("cliente", "Arturo");
-localStorage.setItem("cliente1", "Vanessa");
+/* localStorage.setItem("cliente", "Arturo");
+localStorage.setItem("cliente1", "Vanessa"); */
 
 /* JSON */
 
-const cliente = { nombre: "Elizabeth", apellido: "Rojas", edad: 37};
+/* const cliente = { nombre: "Elizabeth", apellido: "Rojas", edad: 37};
 
 console.log(JSON.stringify (cliente));
 
-localStorage.setItem("arrayCliente", JSON.stringify(cliente));
+localStorage.setItem("arrayCliente", JSON.stringify(cliente)); */
+
+
+/* Sweet Alert */
+document.querySelector("#button").addEventListener("click",() => 
+    Swal.fire({
+        text:"Tu pedido fue procesado con exito",
+        icon:"success",
+        imageUrl: "	https://assets.ltkcontent.com/images/185509/appreciation-words_0066f46bde.jpg",
+        imageWidth: 400,
+        imageHeight: 200,
+        showConfirmButton: false
+    })
+
+);
+
+/* Toastify */
+
+Toastify({
+    text:"Ofertas de Verano",
+    gravity: "bottom",
+    position: "screenLeft",
+    onClick: function (){
+        Swal.fire({
+            text:"25% De descuento en todas las piezas",
+            imageUrl: "https://www.mistercomparador.com/noticias/wp-content/uploads/2018/08/ofertas-verano-2019.jpg",
+            imageWidth: 400,
+            imageHeight: 200,
+            confirmButtonText: "Ir a las ofertas",
+        })
+    }
+}).showToast();
+
+/* Escogi estas dos librerias porque me parece que sirven bien para el proyecto de tienda online que tengo en mente. Son faciles de usar y la informacion se muestra de manera clara */
