@@ -161,3 +161,8 @@ Toastify({
 }).showToast();
 
 /* Escogi estas dos librerias porque me parece que sirven bien para el proyecto de tienda online que tengo en mente. Son faciles de usar y la informacion se muestra de manera clara */
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json));
