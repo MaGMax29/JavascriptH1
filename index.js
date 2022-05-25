@@ -1,6 +1,6 @@
 /* CREAR UN ALGORITMO CON CONDICIONAL */
 
-/* let maxSpeed = prompt ("max speed 120");
+let maxSpeed = prompt ("max speed 120");
 
 if (maxSpeed == 120){
     alert("Send a message");
@@ -8,23 +8,23 @@ if (maxSpeed == 120){
     alert("Gives a warning");
 } else{
     alert ("nothing happens");
-} */
+} 
 
 
 /* CREAR UN ALGORITMO UTILIZANDO UN CICLO */
 
 /* CICLO DE CONTEO */
 
-/* let ingresarNumero = parseInt ( prompt ("Ingresar Numero")); 
+let ingresarNumero = parseInt ( prompt ("Ingresar Numero")); 
 
 for (let i = 2; i <= 10; i++){
     let resultado = ingresarNumero * i;
-    alert(ingresarNumero + " " + i + "=" + resultado ); */
-/* }  */
+    alert(ingresarNumero + " " + i + "=" + resultado );
+ }
 
 /* CICLOS CONDICIONALES */
 
-/* let data = 0;
+let data = 0;
 
 do{
     console.log(data);
@@ -34,20 +34,20 @@ do{
     data++;
 } while(data <=10);
 
-console.log ("End of cicle"); */
+console.log ("End of cicle");
 
 
 /* SIMULADOR INTERACTIVO */
 
 /* PROCESO CALCULO DEL IVA */
 
-/* var precio = 100;
+var precio = 100;
 var ivaEnFactura = 23;
 
 var iva = precio * ivaEnFactura/100;
 var precioTotal = precio + iva;
 
-alert(precioTotal);  */
+alert(precioTotal); 
 
 
 /* AGREGANDO ARRAYS */
@@ -56,7 +56,7 @@ alert(precioTotal);  */
 
 /* AGREGANDO ARRAY AL SIMULADOR INTERACTIVO */
 
-/* const factura= ["Base sin Iva", "Iva", "Total con Iva"];
+const factura= ["Base sin Iva", "Iva", "Total con Iva"];
 
 factura.push ("descuento");
 
@@ -72,10 +72,10 @@ for (let index= 0; index <3; index++){
 }
 console.log (factura);
 
- */
+
 /* Ejemplo de Busqueda */
 
-/* const facturas = [
+const facturas = [
     
     {numero: "00204", montoTotal: 1500},
     {numero: "00186", montoTotal: 2300},
@@ -89,19 +89,18 @@ const resultado3 = facturas.find((el)=> el.numero === "00087")
 
 console.log (resultado)
 console.log (resultado2)
-console.log (resultado3) */
+console.log (resultado3) 
 
 
 /* EJEMPLO DE FILTER */
-/* 
+
 const resultadoX = facturas.filter((el)=> el.numero.includes ("00186"))
 const resultadoY = facturas.filter((el)=> el.numero.includes ("00204"))
-const resultadoZ = facturas.filter((el)=> el.montoTotal < 2300) */
+const resultadoZ = facturas.filter((el)=> el.montoTotal < 2300) 
 
-/* 2DA ENTREGA DE PROYECTO */
 
 /* DOM */
-/* console.log (document.body);
+console.log (document.body);
 
 console.log(document.head);
 
@@ -113,21 +112,21 @@ console.log (document.getElementById ("titulo"));
 let clientes = document.getElementsByClassName ("clientes");
 
 for (const el of clientes){
-    console.log(el.innerHTML); */
+    console.log(el.innerHTML);
 
-/* } */
+}
 
 /* STORAGE */
-/* localStorage.setItem("cliente", "Arturo");
-localStorage.setItem("cliente1", "Vanessa"); */
+localStorage.setItem("cliente", "Arturo");
+localStorage.setItem("cliente1", "Vanessa"); 
 
 /* JSON */
 
-/* const cliente = { nombre: "Elizabeth", apellido: "Rojas", edad: 37};
+const cliente = { nombre: "Elizabeth", apellido: "Rojas", edad: 37};
 
 console.log(JSON.stringify (cliente));
 
-localStorage.setItem("arrayCliente", JSON.stringify(cliente)); */
+localStorage.setItem("arrayCliente", JSON.stringify(cliente));
 
 
 /* Sweet Alert */
@@ -160,7 +159,6 @@ Toastify({
     }
 }).showToast();
 
-/* Escogi estas dos librerias porque me parece que sirven bien para el proyecto de tienda online que tengo en mente. Son faciles de usar y la informacion se muestra de manera clara */
 
 
 fetch('https://jsonplaceholder.typicode.com/todos/1')
